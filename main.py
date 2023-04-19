@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 import Functions as F
 
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 
 st.title("ChatGPT Ask Anything")
 
