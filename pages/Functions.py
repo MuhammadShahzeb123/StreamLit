@@ -7,7 +7,7 @@ class Main:
         model="text-davinci-003",
         prompt=question,
         temperature=1,
-        max_tokens=4000,
+        max_tokens=4097,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
@@ -21,18 +21,13 @@ class Main:
         model="text-davinci-003",
         prompt=f"{role} My Problem: {query}.{comment}",
         temperature=1,
-        max_tokens=4000,
+        max_tokens=4097,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
         )
         return Python_Code["choices"][0]["text"]
 
-    def terminal(command):
-        while True:
-            if command == "break":
-                break
-            os.system(command)
 
     def PythonCodeChecker(codesss):
         os.system(f"python {codesss}")
